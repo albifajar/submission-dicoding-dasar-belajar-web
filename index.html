@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albi Blog | Sejarah Bandung</title>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+<header>
+    <h1 class="title-web">Albi Blog</h1>
+    <nav class="navbar-show-init" id="myNavbar">
+        <ul>
+            <li><a href="">Beranda</a></li>
+            <li><a href="#">Tentang</a></li>
+            <li>
+                <div class="dropdown">
+                    <span class="dropdown-button">Kontak
+                    <svg class="dropdown-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path
+                            d="M12 15.4l-6.3-6.3-1.4 1.4 7 7 7-7-1.4-1.4z"/></svg></span>
+                    <div class="dropdown-content">
+                        <a href="http://linkedin.com" target="_blank">Linkin</a>
+                        <a href="http://instagram.com" target="_blank">Instagram</a>
+                        <a href="http://facebook.com" target="_blank">Facebook</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <span href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</span>
+</header>
+<main>
+    <h1 class="header-page">Artikel</h1>
+    <div class="container-content">
+        <div class="article-list">
+            <article class="card">
+                <div class="card-wrap">
+                    <img class="card-thumbnail" src="assets/img/4.jpg" alt="Deskripsi Gambar">
+                    <div class="card-content">
+                        <h2 class="card-content-header">Bunga Sakura: Keindahan yang Mekar Musim Semi di Jepang</h2>
+                        <p class="card-content-paragraf">
+                            Musim semi di Jepang adalah salah satu waktu paling dinanti-nanti oleh penduduk setempat dan
+                            wisatawan dari seluruh dunia. Ini adalah saat ketika alam mempersiapkan diri untuk menyambut
+                            musim panas setelah melewati musim dingin yang dingin dan tumpah ruah. Salah satu ciri khas
+                            paling ikonik musim semi di Jepang adalah mekar bunga sakura yang memukau. Bunga sakura,
+                            atau sering disebut sebagai bunga ceri....
+                        </p>
+                    </div>
+                    <div>
+                        <a href="#" class="card-do-more">Selengkapnya</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-wrap">
+                    <img class="card-thumbnail" src="assets/img/paris.jpg" alt="Deskripsi Gambar">
+                    <div class="card-content">
+                        <h2 class="card-content-header">Paris: Kota Cinta, Kebudayaan, dan Keindahan Abadi</h2>
+                        <p class="card-content-paragraf">
+                            Paris, ibu kota Prancis, adalah salah satu kota paling ikonik dan penuh pesona di dunia.
+                            Terletak di tepi Sungai Seine, kota ini telah lama menjadi pusat budaya, seni, mode, dan
+                            gastronomi. Paris memiliki daya tarik yang tak terbantahkan bagi para wisatawan dari seluruh
+                            dunia, dan dalam artikel ini, kita akan menjelajahi pesona dan keindahan yang membuat kota
+                            ini begitu unik.....
+                        </p>
+                    </div>
+                    <div>
+                        <a href="#" class="card-do-more">Selengkapnya</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-wrap">
+                    <img class="card-thumbnail" src="assets/img/2.jpg" alt="Deskripsi Gambar">
+                    <div class="card-content">
+                        <h2 class="card-content-header">Cina: Sebuah Pandangan Mendalam ke Negara Terbesar di Dunia</h2>
+                        <p class="card-content-paragraf">
+                            Cina, dengan sejarahnya yang panjang dan budayanya yang kaya, adalah salah satu negara
+                            paling menarik dan berpengaruh di dunia. Dengan populasi lebih dari 1,4 miliar orang, ini
+                            adalah negara terpadat di dunia, dan memiliki dampak yang besar pada politik, ekonomi, dan
+                            budaya global. Dalam artikel ini, kita akan menjelajahi beberapa aspek kunci dari Cina yang
+                            membuatnya menjadi kekuatan dominan di dunia saat ini......
+                        </p>
+                    </div>
+                    <div>
+                        <a href="#" class="card-do-more">Selengkapnya</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <aside>
+            <article class="my-bio">
+                <h1 class="my-bio-header">Tentang Saya</h1>
+                <div class="my-bio-content">
+                <img class="my-bio-thumbnail" src="assets/img/3.jpg" alt="Deskripsi Gambar">
+                <p class="my-bio-paragraf">
+                    Nama saya Albi Fajar, saya adalah seorang mahasiswa di salah satu universitas di Bandung. Saya
+                    sangat tertarik dengan dunia IT, terutama dalam bidang web development. Saya juga sangat tertarik
+                    dengan dunia travelling, saya suka mengunjungi tempat-tempat baru dan menikmati keindahan alam yang
+                    ada di sekitar kita.
+                </p>
+                </div>
+            </article>
+        </aside>
+    </div>
+</main>
+<footer>
+    <span>Hak Cipta &copy; 2023 Albi Fajar</span>
+</footer>
+<script>
+    // // Fungsi untuk menangani klik pada opsi
+    // function handleClick(option) {
+    //     alert("Anda memilih: " + option);
+    // }
+    //
+    // // Menambahkan event listener ke setiap opsi dropdown
+    // document.querySelectorAll('.dropdown-content a').forEach(function (option) {
+    //     option.addEventListener('click', function () {
+    //         var selectedOption = option.textContent;
+    //         handleClick(selectedOption);
+    //     });
+    // });
+    // Fungsi untuk menampilkan/menyembunyikan menu pada tampilan kecil
+    function myFunction() {
+        let x = document.getElementById("myNavbar");
+        console.log(x)
+        if (x.className === "navbar-show") {
+            x.className = "navbar-hidden";
+        } else {
+            x.className = "navbar-show";
+        }
+    }
+</script>
+</body>
+</html>
